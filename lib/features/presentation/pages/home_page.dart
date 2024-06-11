@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                   color: Colors.white,fontFamily: 'FRSCRIPT')),
             ),
             const SizedBox(height: 10),
-            Card(
+            /*Card(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: const EdgeInsets.only(left: 10),
@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
+            ),*/
             CardView(imageUrl: imageUrl, title: title, type: type, rating: rating, year: year, story: story),
             const SizedBox(height: 5),
             CardView(imageUrl: imageUrl2, title: title2, type: type2, rating: rating2, year: year2, story: story2),
@@ -111,56 +111,56 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 5),
             CardView(imageUrl: imageUrl4, title: title4, type: type4, rating: rating4, year: year4, story: story4),
 
-            Card(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 10),
-                child: Row(
-                  children:  [
-                    Container(height: 180, width:100 ,
-                      decoration:  BoxDecoration(
-                          image:DecorationImage(image: AssetImage(imageUrl))
-                      ),),
-                    const SizedBox(width: 20,),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children:   [
-                        Text(title, style: const TextStyle(fontSize:20 , fontWeight: FontWeight.bold)),
-                        Text(type, style: const TextStyle(fontSize:10 ,
-                            fontWeight: FontWeight.bold , color: Colors.black26)),
-                        const SizedBox(height:5),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children:  [
-                            Text(rating, style: const TextStyle(fontSize:15 , fontWeight: FontWeight.bold)),
-                            const Text("/10", style: TextStyle(fontSize:10 , fontWeight: FontWeight.bold,color: Colors.black26)),
-                            const SizedBox(width:20),
-                            Container(
-                              height: 20,
-                              width: 80,
-                              decoration:  BoxDecoration( borderRadius:  BorderRadius.circular(30),
-                                  color: Colors.red),
-                              child:  Center(child: Text(year,style: const TextStyle(color: Colors.white,
-                                  fontSize: 10),)),
-                            )
-                          ],
-                        ),
-                        const SizedBox(height:5),
-                        Container(
-                          color: Colors.white,
-                          height: 70, width: 220,
-                          child:   Text(story,style: const TextStyle(
-                              fontSize: 10,color: Colors.black45
-                          )),
-                        )
-
-                      ],
-                    )
-                  ],
-                ),
-              ),
-            ),
+            // Card(
+            //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            //   child: Padding(
+            //     padding: const EdgeInsets.only(left: 10),
+            //     child: Row(
+            //       children:  [
+            //         Container(height: 180, width:100 ,
+            //           decoration:  BoxDecoration(
+            //               image:DecorationImage(image: AssetImage(imageUrl))
+            //           ),),
+            //         const SizedBox(width: 20,),
+            //         Column(
+            //           crossAxisAlignment: CrossAxisAlignment.start,
+            //           mainAxisAlignment: MainAxisAlignment.start,
+            //           children:   [
+            //             Text(title, style: const TextStyle(fontSize:20 , fontWeight: FontWeight.bold)),
+            //             Text(type, style: const TextStyle(fontSize:10 ,
+            //                 fontWeight: FontWeight.bold , color: Colors.black26)),
+            //             const SizedBox(height:5),
+            //             Row(
+            //               crossAxisAlignment: CrossAxisAlignment.end,
+            //               children:  [
+            //                 Text(rating, style: const TextStyle(fontSize:15 , fontWeight: FontWeight.bold)),
+            //                 const Text("/10", style: TextStyle(fontSize:10 , fontWeight: FontWeight.bold,color: Colors.black26)),
+            //                 const SizedBox(width:20),
+            //                 Container(
+            //                   height: 20,
+            //                   width: 80,
+            //                   decoration:  BoxDecoration( borderRadius:  BorderRadius.circular(30),
+            //                       color: Colors.red),
+            //                   child:  Center(child: Text(year,style: const TextStyle(color: Colors.white,
+            //                       fontSize: 10),)),
+            //                 )
+            //               ],
+            //             ),
+            //             const SizedBox(height:5),
+            //             Container(
+            //               color: Colors.white,
+            //               height: 70, width: 220,
+            //               child:   Text(story,style: const TextStyle(
+            //                   fontSize: 10,color: Colors.black45
+            //               )),
+            //             )
+            //
+            //           ],
+            //         )
+            //       ],
+            //     ),
+            //   ),
+            // ),
 
             // Card(
             //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

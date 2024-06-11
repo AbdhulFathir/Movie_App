@@ -28,7 +28,7 @@ class CardView extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: Row(
                   children:  [
-                    Container(height: 200, width:110 ,
+                    Container(height: 180, width:90 ,
                       decoration:  BoxDecoration(
                           image:DecorationImage(image: AssetImage(imageUrl))
                       ),),
@@ -115,7 +115,7 @@ class CardView extends StatelessWidget {
                   ),
                   const SizedBox(height:5),
                   Container(
-                    color: Colors.white,
+                    color: Colors.transparent,
                     height: 70, width: 220,
                     child:   Text( story ,style: const TextStyle(
                         fontSize: 10,color: Colors.black45
