@@ -29,7 +29,7 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pubspec.lock
 .packages
-pub-cache/
+pubspec.lock
 .pub/
 /build/
 
